@@ -1,0 +1,277 @@
+.wrap_blokirator p {
+    font-weight: normal!important;
+}
+
+.wrap_blokirator .farbtastic {
+    position: absolute;
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+
+.wrap_blokirator #colorpicker_button,
+.wrap_blokirator #colorpicker_text {
+    position: absolute;
+}
+
+.wrap_blokirator .remove_adress {
+    width: 100%;
+    height: 0;
+    margin-top: 20px;
+    visibility: hidden;
+    transition: all .4s ease;
+    overflow-y: scroll;
+    padding: 0;
+}
+
+.wrap_blokirator .block-show {
+    visibility: visible!important;
+    height: 86px;
+    padding: 15px;
+}
+
+.wrap_blokirator h2 {
+    font-size: 26px;
+    line-height: 2;
+    margin: 20px 0;
+    font-weight: normal!important;
+}
+
+.wrap_blokirator select {
+    width: 100%;
+    max-width: 338px;
+    padding-left: 15px;
+    height: 34px;
+    border: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.wrap_blokirator input {
+    width: 100%;
+    max-width: 100%;
+    padding: 9px 15px;
+    line-height: 1;
+    border-color: #000000;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: normal;
+    border: none;
+}
+
+.wrap_blokirator input[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+    line-height: 40px;
+    height: 40px;
+}
+
+.wrap_blokirator input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-color: #000000;
+}
+
+.wrap_blokirator #add-variant input {
+    width: 145px;
+    line-height: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 30px 0;
+    font-weight: normal!important;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    padding: 10px;
+    font-size: 14px;
+    max-width: 1100px;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    width: 33%;
+    vertical-align: top;
+}
+
+th label,
+th p {
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: normal!important;
+}
+
+th label {
+    display: block;
+}
+
+th p {
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+th textarea {
+    width: 100%;
+    padding: 24px;
+    border-color: #000000;
+    font-weight: normal;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+/*tabs styles*/
+
+.tabs_blokirator input[type="radio"] {
+    display: none;
+}
+
+.tabs_blokirator label[for="dfp-ads"],
+.tabs_blokirator label[for="simple-ads"] {
+    position: relative;
+    display: inline-block;
+    padding: 6px 35px;
+    font-weight: 600;
+    text-align: center;
+    color: #999;
+    background-color: transparent;
+    vertical-align: top;
+    transition: all 0.3s ease;
+}
+
+.tabs_blokirator label[for="dfp-ads"]::before,
+.tabs_blokirator label[for="simple-ads"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.tabs_blokirator section {
+    display: none;
+    padding: 20px 10px;
+    background-color: #fff;
+}
+
+.tabs_blokirator section input {
+    width: 100%;
+    max-width: 100%;
+    background-color: #f9f9f9;
+}
+
+.tabs_blokirator label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.tabs_blokirator input:checked+label {
+    position: relative;
+    color: #555;
+    background-color: #fff;
+    padding-left: 45px;
+}
+
+.tabs_blokirator input:checked+label::before {
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: 10px;
+    background-color: green;
+}
+
+#simple-ads:checked~#content-simple,
+#dfp-ads:checked~#content-dfp {
+    display: block;
+}
+
+@media only screen and (max-width: 1260px) {
+    th label {
+        display: block;
+    }
+    tr {
+        display: block;
+    }
+    th {
+        display: block;
+        width: auto;
+    }
+    .wrap_blokirator .remove_adress {
+        width: 100%;
+    }
+    .wrap_blokirator select {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .widefat tfoot td input[type=checkbox]:before,
+    .widefat th input[type=checkbox]:before,
+    .widefat thead td input[type=checkbox]:before,
+    input[type=checkbox]:checked:before {
+        margin: -7px -8px;
+    }
+}
+
+
+/**/
+
+#img_pic_question {
+    height: 38vw;
+    max-height: 260px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px -11px #a2a2a2;
+}
+
+#gradientQuiz__QuizName {
+    height: 38vw;
+    max-height: 260px;
+    width: 100%;
+    color: rgb(51, 51, 51);
+    box-shadow: 0 10px 30px -11px #a2a2a2;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#gradien_after {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: calc(.1em + 3vw);
+}
+
+#img_before {
+    height: 38vw;
+    max-height: 260px;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    filter: blur(5px) contrast(.3);
+    transform: scale(1.5) translateY(-50%);
+    z-index: -1;
+    margin-top: 71px;
+}
+
+#img_after {
+    height: 38vw;
+    max-height: 260px;
+    width: 100%;
+    border-radius: 5px;
+}
